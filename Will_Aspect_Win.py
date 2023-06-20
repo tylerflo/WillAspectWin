@@ -44,19 +44,41 @@ times = {
     "Whittleton Creek": 60+1
 }
 
+showdowns = {
+    "Dubai": 1,
+    "Hokkaido": 0,
+    "Haven Island": .6,
+    "Mendoza": .841,
+    "New York": 0,
+    "Whittleton Creek": .722
+}
+
+showdown_times = {
+    "Dubai": 60+36,
+    "Hokkaido": 60+27,
+    "Haven Island": 48,
+    "Mendoza": 60+6,
+    "New York": 60+32,
+    "Whittleton Creek": 60
+}
+
 def syndicate_calc():
     list_maps = []
     num_maps = int(input('Which syndicate is Aspect on? '))
     num_maps += 2
-    print('Enter the names of each map in the syndicate')
-    for x in range(0, num_maps):
+    print('Enter the names of each map in the syndicate (besides the showdown)')
+    for x in range(0, num_maps-1):
         map = str(input())
         list_maps.append(map)
+    print('Enter the map where the showdown takes place')
+    showdown_map = str(input())
     total_one = 0
     total_two = 0
     for y in list_maps:
         total_one += maps[y]
         total_two += times[y]
+    total_one += showdowns[showdown_map]
+    total_two += showdown_times[showdown_map]
     chance_of_success = total_one/num_maps * 100
     gamba_threshold = (.65 + (.05 * (num_maps-2))) * 100
     seconds = math.ceil((total_two/60 % 1) * 60)
