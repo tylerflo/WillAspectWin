@@ -1,65 +1,65 @@
 import math
 
 maps = {
-    "Ambrose Island": .79,
-    "Bangkok": .75,
-    "Berlin": .93,
-    "Chongqing": .93,
-    "Colorado": .63,
-    "Dartmoor": .76,
-    "Dubai": .81,
-    "Hokkaido": .65,
-    "Haven Island": .72,
-    "Isle of Sgail": .69,
-    "Marrakesh": .54,
-    "Mendoza": .88,
-    "Miami": .88,
-    "Mumbai": .80,
-    "New York": .75,
-    "Paris": .61,
-    "Santa Fortuna": .72,
-    "Sapienza": .79,
-    "Whittleton Creek": .74
+    "Ambrose Island": .833,
+    "Bangkok": .786,
+    "Berlin": .927,
+    "Chongqing": .889,
+    "Colorado": .529,
+    "Dartmoor": .73,
+    "Dubai": .855,
+    "Hokkaido": .608,
+    "Haven Island": .708,
+    "Isle of Sgail": .583,
+    "Marrakesh": .579,
+    "Mendoza": .896,
+    "Miami": .778,
+    "Mumbai": .864,
+    "New York": .786,
+    "Paris": .64,
+    "Santa Fortuna": .545,
+    "Sapienza": .75,
+    "Whittleton Creek": .72
 }
 
 times = {
-    "Ambrose Island": 60+43,
-    "Bangkok": 60+32,
-    "Berlin": 60+48,
-    "Chongqing": 120+4,
-    "Colorado": 60+17,
-    "Dartmoor": 60+50,
-    "Dubai": 60+35,
-    "Hokkaido": 60+28,
-    "Haven Island": 60+9,
-    "Isle of Sgail": 120+16,
-    "Marrakesh": 60+45,
-    "Mendoza": 60+27,
-    "Miami": 120+21,
+    "Ambrose Island": 60+52,
+    "Bangkok": 60+23,
+    "Berlin": 60+41,
+    "Chongqing": 60+58,
+    "Colorado": 60+14,
+    "Dartmoor": 60+38,
+    "Dubai": 60+38,
+    "Hokkaido": 60+26,
+    "Haven Island": 60+3,
+    "Isle of Sgail": 120+6,
+    "Marrakesh": 60+37,
+    "Mendoza": 60+36,
+    "Miami": 60+52,
     "Mumbai": 120+11,
-    "New York": 60+34,
-    "Paris": 60+46,
-    "Santa Fortuna": 180+7,
-    "Sapienza": 120+1,
-    "Whittleton Creek": 60+1
+    "New York": 60+32,
+    "Paris": 60+36,
+    "Santa Fortuna": 120+20,
+    "Sapienza": 60+40,
+    "Whittleton Creek": 54
 }
 
 showdowns = {
     "Dubai": 1,
     "Hokkaido": 0,
     "Haven Island": .6,
-    "Mendoza": .841,
+    "Mendoza": .727,
     "New York": 0,
-    "Whittleton Creek": .722
+    "Whittleton Creek": .703
 }
 
 showdown_times = {
-    "Dubai": 60+36,
-    "Hokkaido": 60+27,
+    "Dubai": 60+38,
+    "Hokkaido": 60+26,
     "Haven Island": 48,
-    "Mendoza": 60+6,
+    "Mendoza": 58,
     "New York": 60+32,
-    "Whittleton Creek": 60
+    "Whittleton Creek": 53
 }
 
 def syndicate_calc():
